@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Var</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- app -->
+  <div id="app" class="app" v-bind:style="colorVariables">
+    <div class="content">
+
+      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+
+      <p>Sit ab modi tempore rerum, nisi voluptatibus velit natus deserunt. Accusantium quaerat ullam mollitia culpa soluta dolorum, tempora, nulla sunt quam iste. Eveniet excepturi rerum corporis quisquam doloribus adipisci eius, assumenda <a href="#">commodi qui voluptate</a> quod minima.</p>
+
+      <button class="button button--primary">Primary Button</button>
+
+      <button class="button button--ghost">Ghost Button</button>
+
+      <button class="button button--secondary">Secondary Button</button>
+
+    </div>
+    <div class="themes-container">
+      <ul class="themes">
+        <li class="themes-item" v-on:click="setTheme(defaultTheme)">Default</li>
+        <li class="themes-item" v-on:click="setTheme(bubblegumTheme)">bubblegum</li>
+        <li class="themes-item" v-on:click="setTheme(midnightTheme)">Midnight</li>
+        <li class="themes-item" v-on:click="setTheme(froggerTheme)">Frogger</li>
+        <li class="themes-item" v-on:click="setTheme(AlleyCatTheme)">Alley Cat</li>
+      </ul>
+    </div>
+  </div>
+  <!-- /app -->
+
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js" charset="utf-8"></script>
+  <script src="./script.js" charset="utf-8"></script>
+  <!-- /script -->
+
+</body>
+</html>
